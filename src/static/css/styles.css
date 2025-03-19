@@ -149,11 +149,11 @@ section {
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.9)), url('hero-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.382), rgba(52, 48, 48, 0.764)), url('../../assets/images/background/hero-pic-gif.gif');
   background-size: cover;
   background-position: center;
   height: 100vh;
-  color: #fff;
+  color: #fffffffc;
   display: flex;
   align-items: center;
   padding-top: 80px;
