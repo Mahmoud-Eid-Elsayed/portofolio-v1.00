@@ -16,7 +16,9 @@ app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/static/index.html'));
 });
-
+// Serve Bootstrap and Font Awesome from "node_modules"
+app.use('/node_modules/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap')));
+app.use('/node_modules/@fortawesome/fontawesome-free', express.static(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free')));
 // Endpoint to get environment variables
 app.get('/env', (req, res) => {
   res.json({
