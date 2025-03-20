@@ -859,16 +859,66 @@ footer .social-links {
 }
 
 @media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .profession {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 50px 0;
   }
 
   .section-title h2 {
     font-size: 2rem;
   }
 
+  .underline {
+    width: 60px;
+  }
+
   .navbar-nav {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -876,10 +926,32 @@ footer .social-links {
     background-color: var(--dark-bg);
     flex-direction: column;
     padding: 20px 0;
+    z-index: 1000;
   }
 
   .navbar-nav.active {
     display: flex;
+  }
+
+  .navbar-collapse {
+    background-color: var(--dark-bg);
+    padding: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-lg-4,
+  .col-md-6,
+  .col-lg-5,
+  .col-lg-7 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
   }
 
   .about-content h3 {
@@ -901,7 +973,13 @@ footer .social-links {
   .timeline-item:before {
     left: 12px;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
+
 
 @media (max-width: 575px) {
   .hero-content h1 {
